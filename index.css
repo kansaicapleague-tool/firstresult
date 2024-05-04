@@ -12,6 +12,21 @@ input[type="number"] {
 .image {/*親div*/
     position: relative;/*相対配置*/
 }
+
+.image .datecontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 3.5vw;
+    top: 1%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .datecontainer p#dateText {
+    text-align: center;
+
+}
    
 .image .firstTeamnamecontainer {
     position: absolute;/*絶対配置*/

@@ -19,6 +19,7 @@
 
     <main>
         <!-- 入力フォーム -->
+        <input type="date" id="date" name="date" value="2024-05-01" min="2024-05-01" max="2100-12-31" /><br>
         <label>1戦目先攻チーム:<select id="firstTeam">
             <option value="龍谷A">龍谷A</option>
             <option value="京大A">京大A</option>
@@ -48,7 +49,7 @@
         <img id="background" src="firstresultbackground.jpg" />
         <img id="firstImage" />
         <img id="secondImage" />
-        
+
         <div class="firstTeamnamecontainer">
             <p id="firstTeamname"></p>
         </div>
@@ -56,6 +57,9 @@
             <p id="secondTeamname"></p>
         </div>
         <span style="font-family: Jaro">
+        <div class="datecontainer">
+            <p id="dateText"></p>
+        </div>
         <div class="firstGameFirstPointcontainer">
             <p id="firstGameFirstPoint"></p>
         </div>

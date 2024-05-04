@@ -12,6 +12,7 @@ function changeClick(){
     firstGameSecondPoint.textContent = firstGameSecond.value;
     secondGameFirstPoint.textContent = secondGameFirst.value;
     secondGameSecondPoint.textContent = secondGameSecond.value;
+    dateText.textContent = date.value;
 
     switch(firstTeam.value){
         case "龍谷A":
@@ -100,6 +101,8 @@ secondImage.src = secondImageName;
   let secondGameFirstPoint = document.getElementById('secondGameFirstPoint');
   let secondGameSecond = document.getElementById('secondGameSecond');
   let secondGameSecondPoint = document.getElementById('secondGameSecondPoint');
+  let date = document.getElementById('date');
+  let dateText = document.getElementById('dateText');
   
   let changeButton = document.getElementById('changeButton');
   changeButton.addEventListener('click', changeClick);
