@@ -1,0 +1,117 @@
+h1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+input[type="number"] {
+    width: 50px;
+  }
+
+.image {/*親div*/
+    position: relative;/*相対配置*/
+}
+   
+.image .firstTeamnamecontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 4vw;
+    top: 30%;
+    left: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .firstTeamnamecontainer p#firstTeamname {
+    text-align: center;
+}
+
+.image .secondTeamnamecontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 4vw;
+    top: 30%;
+    right: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .secondTeamnamecontainer p#secondTeamname {
+    text-align: center;
+}
+
+.image .firstGameFirstPointcontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 18vw;
+    top: 4%;
+    left: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .firstGameFirstPointcontainer p#firstGameFirstPoint {
+    text-align: center;
+}
+
+.image .firstGameSecondPointcontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 18vw;
+    top: 4%;
+    right: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .firstGameSecondPointcontainer p#firstGameSecondPoint {
+    text-align: center;
+}
+
+.image .secondGameFirstPointcontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 18vw;
+    top: 28%;
+    left: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .secondGameFirstPointcontainer p#secondGameFirstPoint {
+    text-align: center;
+}
+
+
+.image .secondGameSecondPointcontainer {
+    position: absolute;/*絶対配置*/
+    color: white;
+    font-size: 18vw;
+    top: 28%;
+    right: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+.image .secondGameSecondPointcontainer p#secondGameSecondPoint {
+    text-align: center;
+}
+
+.image img#background {
+    width: 100%;
+}
+
+.image img#firstImage {
+    position: absolute;
+    top: 4%;
+    left: 21%;
+    width: 20%;
+}
+
+.image img#secondImage {
+    position: absolute;
+    top: 4%;
+    right: 21%;
+    width: 20%;
+}

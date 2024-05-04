@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="関西キャップリーグ1部順位表">
+<!-- <meta name="keywords" content="半角コンマ(,)でキーワードを区切って入力"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>関西キャップリーグ1部結果</h1>
+    </header>
+
+    <main>
+        <!-- 入力フォーム -->
+        <label>1戦目先攻チーム:<select id="firstTeam">
+            <option value="龍谷A">龍谷A</option>
+            <option value="京大A">京大A</option>
+            <option value="京大B">京大B</option>
+            <option value="大阪大学">大阪大学</option>
+            <option value="大阪公立大学">大阪公立大学</option>
+            <option value="賀茂別雷">賀茂別雷</option>
+         </select></label>
+        <label>1戦目後攻チーム:<select id="secondTeam">
+            <option value="龍谷A">龍谷A</option>
+            <option value="京大A">京大A</option>
+            <option value="京大B">京大B</option>
+            <option value="大阪大学">大阪大学</option>
+            <option value="大阪公立大学">大阪公立大学</option>
+            <option value="賀茂別雷">賀茂別雷</option>
+         </select></label><br>
+        <label><input type="number" id="firstGameFirst" step="1"></label>
+        <label>vs<input type="number" id="firstGameSecond" step="1"></label><br>
+        <label><input type="number" id="secondGameFirst" step="1"></label>
+        <label>vs<input type="number" id="secondGameSecond" step="1"></label><br>
+        <input type="button" value="確認" id="checkButton">
+        <input type="button" value="ダウンロード" id="downloadButton"><br>
+
+    </main>
+    <div id="target" class="image">
+        <img id="background" src="firstresultbackground.jpg" />
+        <img id="firstImage" src="RuCBC.jpg" />
+        <img id="secondImage" src="RuCBC.jpg" />
+        
+        <div class="firstTeamnamecontainer">
+            <p id="firstTeamname"></p>
+        </div>
+        <div class="secondTeamnamecontainer">
+            <p id="secondTeamname"></p>
+        </div>
+        <span style="font-family: Jaro">
+        <div class="firstGameFirstPointcontainer">
+            <p id="firstGameFirstPoint"></p>
+        </div>
+        <div class="firstGameSecondPointcontainer">
+            <p id="firstGameSecondPoint"></p>
+        </div>
+        <div class="secondGameFirstPointcontainer">
+            <p id="secondGameFirstPoint"></p>
+        </div>
+        <div class="secondGameSecondPointcontainer">
+            <p id="secondGameSecondPoint"></p>
+        </div>
+        </span>
+    </div>
+    
+    <a id="getImage" href="" style="display: none"></a>
+
+    <script src="index.js"></script>
+</body>
+</html>
