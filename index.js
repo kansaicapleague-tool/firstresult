@@ -101,6 +101,8 @@ secondImage.src = secondImageName;
   let secondGameSecond = document.getElementById('secondGameSecond');
   let secondGameSecondPoint = document.getElementById('secondGameSecondPoint');
   
+  let changeButton = document.getElementById('changeButton');
+  changeButton.addEventListener('click', changeClick);
   let checkButton = document.getElementById('checkButton');
   checkButton.addEventListener('click', checkClick);
   let downloadButton = document.getElementById('downloadButton');
