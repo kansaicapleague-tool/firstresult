@@ -1,4 +1,11 @@
 function checkClick(){
+    html2canvas(document.getElementById("target")).then(canvas => {
+        document.body.appendChild(canvas)
+        canvas.id = "canvas"
+      });
+}
+
+function changeClick(){
     firstTeamname.textContent = firstTeam.value;
     secondTeamname.textContent = secondTeam.value;
     firstGameFirstPoint.textContent = firstGameFirst.value;
@@ -52,7 +59,9 @@ function checkClick(){
     }
     firstImage.src = firstImageName;
     secondImage.src = secondImageName; 
+}
 
+function checkClick(){
     html2canvas(document.getElementById("target")).then(canvas => {
         document.body.appendChild(canvas)
         canvas.id = "canvas"
